@@ -9,14 +9,17 @@ p {font-size: 16px;}
 .bg-1 { 
 	background-color: #1abc9c; /* Verde */
 	color: #ffffff;
+	margin-top:50px
 }
 .bg-2 { 
 	background-color: #474e5d; /* Azul oscuro */
 	color: #ffffff;
+	position:relative;
 }
 .bg-3 { 
 	background-color: #6b6b47; /* Blanco */
 	color: #ffffff;
+	position:relative;
 }
 .bg-4 { 
 	background-color: #2f2f2f; /* Gris oscuro */
