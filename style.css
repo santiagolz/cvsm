@@ -1,0 +1,156 @@
+body {
+	font: 20px Courier new;
+	line-height: 1.8;
+	color: #f5f6f7;
+}
+
+p {font-size: 16px;}
+.margin {margin-bottom: 45px;}
+.bg-1 { 
+	background-color: #1abc9c; /* Verde */
+	color: #ffffff;
+}
+.bg-2 { 
+	background-color: #474e5d; /* Azul oscuro */
+	color: #ffffff;
+}
+.bg-3 { 
+	background-color: #6b6b47; /* Blanco */
+	color: #ffffff;
+}
+.bg-4 { 
+	background-color: #2f2f2f; /* Gris oscuro */
+	color: #ffffff;
+}
+
+.container-fluid {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.bg-tablas-2 { 
+	background-color: #474e5d; /* Blanco */
+	color: #000000;
+}
+
+.tarjetas-est { 
+	background-color: #ebebe0; /* Blanco */
+	color: #000000;
+}
+
+.bg-tablas-3 { 
+	background-color: #6b6b47; /* Blanco */
+	color: #000000;
+}
+
+.tarjetas-exp { 
+	background-color: #ebebe0; /* Blanco */
+	color: #000000;
+}
+
+.navbar {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: 0;
+	border-radius: 0;
+	margin-bottom: 0;
+	font-size: 12px;
+	letter-spacing: 4px;
+}
+.navbar-nav  li a:hover {
+	color: #1abc9c !important;
+}
+
+.pie-pag {
+	position: fixed;
+	padding-left: 5px;
+	right: 50%;
+	bottom: 0;
+	margin: auto;
+	display: block;
+	border-radius: 50%;
+	border: 4px solid #337bb7;
+	width: 75px;
+    height: 75px; 
+	text-align: center;
+}
+.btn-top {
+	padding-left: 4px;
+}
+/*
+.btn-top {
+	display: block;
+	border-radius: 50%;
+	border: 4px solid #337bb7;
+	width: 90px;
+    height: 90px; 
+	text-align: center;
+	padding-left: 3px;
+}
+.btn-next {
+	display: block;
+	border-radius: 50%;
+	border: 4px solid #337bb7;
+	width: 40px;
+    height: 40px; 
+	text-align: center;
+	padding-left: 3px;
+}
+*/
+/* EFECTO PARALLAX INICIO */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+	position: relative;
+	opacity: 0.65;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.bgimg-1 {
+	background-image: url("img/q-brand-graphic-design.jpg");
+	min-height: 500px;
+}
+
+.bgimg-2 {
+	background-image: url("img/365728-636190610546181732-16x9.jpg");
+	min-height: 500px;
+}
+
+.bgimg-3 {
+	background-image: url("img/175129-636271814847362281-16x9.jpg");
+	min-height: 200px;
+}
+
+.bgimg-4 {
+	background-image: url("img/AAEAAQAAAAAAAA0AAAAAJDU3NThmZGVlLTYwMjctNDdkNy04NmFkLTRkMzg1ZTBlNjhkOA.jpg");
+	min-height: 500px;
+}
+
+.caption {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+}
+
+.caption span.border {
+	background-color: #111;
+	color: #fff;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 10px;
+}
+
+/* DESACTIVAR PARALLAX PARA TABLETS Y CELULARES */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+	
+/* EFECTO PARALLAX FIN */
+
+
