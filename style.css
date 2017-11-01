@@ -4,23 +4,37 @@ body {
 	color: #f5f6f7;
 }
 
-p {font-size: 16px;}
-.margin {margin-bottom: 45px;}
+p {
+	font-size: 16px;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+}
+
+.margin {
+	margin-bottom: 45px;
+}
+
 .bg-1 { 
 	background-color: #1abc9c; /* Verde */
 	color: #ffffff;
-	margin-top:50px
+	margin-top: 50px
 }
+
 .bg-2 { 
-	background-color: #474e5d; /* Azul oscuro */
+	background-color: #2b506e; /* #474e5d;  gris oscuro, esta bueno */
 	color: #ffffff;
 	position:relative;
 }
+
 .bg-3 { 
-	background-color: #6b6b47; /* Blanco */
+	background-color: Coral; /* Blanco */
 	color: #ffffff;
 	position:relative;
 }
+
 .bg-4 { 
 	background-color: #2f2f2f; /* Gris oscuro */
 	color: #ffffff;
@@ -32,17 +46,36 @@ p {font-size: 16px;}
 }
 
 .bg-tablas-2 { 
-	background-color: #474e5d; /* Blanco */
+	background-color: #2b506e; /* #474e5d;  gris oscuro, esta bueno */
 	color: #000000;
 }
 
 .tarjetas-est { 
-	background-color: #ebebe0; /* Blanco */
+	background-color: LightYellow; /* Blanco */
 	color: #000000;
+	border-left: 3px solid Tomato;
+	/*padding-left: 10px;
+	padding-right: 10px; */
+	padding: 15px 10px;
+}
+
+.tarjetas-est img {
+	width:100%;
+	max-width:100px;
+	float:left;
+	margin:10px;
+}
+
+.tarjetas-est hr {
+	border: 1px solid Tomato;
+}
+
+.tarjetas-est h4 {
+	text-align: center;
 }
 
 .bg-tablas-3 { 
-	background-color: #6b6b47; /* Blanco */
+	background-color: Coral; /* Blanco */
 	color: #000000;
 }
 
@@ -100,6 +133,61 @@ p {font-size: 16px;}
 	padding-left: 3px;
 }
 */
+
+
+
+/* QUOTE BUBBLE INICIO */
+/*
+.quote-bubble {
+	border-style: double;
+	border-width: 5px;
+	border-radius: 25px;
+}
+*/
+.burbuja-dialogo
+{
+position: relative;
+width: 600px;
+height: auto;
+padding: 20px;
+/*background: #FFFFFF;*/
+border: #000000 solid 2px;
+-webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+border-radius: 25px;
+}
+
+.burbuja-dialogo:after 
+{
+content: "";
+position: absolute;
+bottom: -15px;
+left: 80%;
+border-style: solid;
+border-width: 15px 15px 0;
+border-color: #1abc9c transparent;
+display: block;
+width: 0;
+z-index: 1;
+}
+
+.burbuja-dialogo:before 
+{
+content: "";
+position: absolute;
+bottom: -17.5px;
+left: calc(80% - 3px);
+border-style: solid;
+border-width: 18px 18px 0;
+border-color: #000000 transparent;
+display: block;
+width: 0;
+z-index: 0;
+}
+
+/* QUOTE BUBBLE FIN */
+
+
 /* EFECTO PARALLAX INICIO */
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
 	position: relative;
