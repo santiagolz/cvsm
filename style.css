@@ -8,6 +8,11 @@ p {
 	font-size: 16px;
 }
 
+.container-fluid {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
 .row{
   display: flex;
   justify-content: center;
@@ -17,32 +22,86 @@ p {
 	margin-bottom: 45px;
 }
 
+
+
+.navbar {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: 0;
+	border-radius: 0;
+	margin-bottom: 0;
+	font-size: 12px;
+	letter-spacing: 4px;
+}
+.navbar-nav  li a:hover {
+	color: #1abc9c !important;
+}
+
+
+
+
 .bg-1 { 
 	background-color: #1abc9c; /* Verde */
 	color: #ffffff;
 	margin-top: 50px
 }
 
+/* BURBUJA DIALOGO INICIO */
+/*
+.quote-bubble {
+	border-style: double;
+	border-width: 5px;
+	border-radius: 25px;
+}
+
+*/
+.burbuja-dialogo {
+	position: relative;
+	width: 600px;
+	height: auto;
+	padding: 20px;
+	/*background: #FFFFFF;*/
+	border: #000000 solid 2px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+
+.burbuja-dialogo:after {
+	content: "";
+	position: absolute;
+	bottom: -15px;
+	left: 80%;
+	border-style: solid;
+	border-width: 15px 15px 0;
+	border-color: #1abc9c transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+}
+
+.burbuja-dialogo:before {
+	content: "";
+	position: absolute;
+	bottom: -17.5px;
+	left: calc(80% - 3px);
+	border-style: solid;
+	border-width: 18px 18px 0;
+	border-color: #000000 transparent;
+	display: block;
+	width: 0;
+	z-index: 0;
+}
+
+/* QUOTE BUBBLE FIN */
+
+
+
+
 .bg-2 { 
 	background-color: #2b506e; /* #474e5d;  gris oscuro, esta bueno */
 	color: #ffffff;
 	position:relative;
-}
-
-.bg-3 { 
-	background-color: Coral; /* Blanco */
-	color: #ffffff;
-	position:relative;
-}
-
-.bg-4 { 
-	background-color: #2f2f2f; /* Gris oscuro */
-	color: #ffffff;
-}
-
-.container-fluid {
-	padding-top: 70px;
-	padding-bottom: 70px;
 }
 
 .bg-tablas-2 { 
@@ -53,10 +112,9 @@ p {
 .tarjetas-est { 
 	background-color: LightYellow; /* Blanco */
 	color: #000000;
-	border-left: 3px solid Tomato;
-	/*padding-left: 10px;
-	padding-right: 10px; */
+	border-left: 30px solid Tomato;
 	padding: 15px 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .tarjetas-est img {
@@ -72,6 +130,16 @@ p {
 
 .tarjetas-est h4 {
 	text-align: center;
+	font-weight: bold;
+}
+
+
+
+
+.bg-3 { 
+	background-color: Coral; /* Blanco */
+	color: #ffffff;
+	position:relative;
 }
 
 .bg-tablas-3 { 
@@ -82,20 +150,19 @@ p {
 .tarjetas-exp { 
 	background-color: #ebebe0; /* Blanco */
 	color: #000000;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.navbar {
-	padding-top: 15px;
-	padding-bottom: 15px;
-	border: 0;
-	border-radius: 0;
-	margin-bottom: 0;
-	font-size: 12px;
-	letter-spacing: 4px;
+
+
+
+.bg-4 { 
+	background-color: #2f2f2f; /* Gris oscuro */
+	color: #ffffff;
 }
-.navbar-nav  li a:hover {
-	color: #1abc9c !important;
-}
+
+
+
 
 .pie-pag {
 	position: fixed;
@@ -110,9 +177,11 @@ p {
     height: 75px; 
 	text-align: center;
 }
+
 .btn-top {
 	padding-left: 4px;
 }
+
 /*
 .btn-top {
 	display: block;
@@ -135,57 +204,6 @@ p {
 */
 
 
-
-/* QUOTE BUBBLE INICIO */
-/*
-.quote-bubble {
-	border-style: double;
-	border-width: 5px;
-	border-radius: 25px;
-}
-*/
-.burbuja-dialogo
-{
-position: relative;
-width: 600px;
-height: auto;
-padding: 20px;
-/*background: #FFFFFF;*/
-border: #000000 solid 2px;
--webkit-border-radius: 25px;
--moz-border-radius: 25px;
-border-radius: 25px;
-}
-
-.burbuja-dialogo:after 
-{
-content: "";
-position: absolute;
-bottom: -15px;
-left: 80%;
-border-style: solid;
-border-width: 15px 15px 0;
-border-color: #1abc9c transparent;
-display: block;
-width: 0;
-z-index: 1;
-}
-
-.burbuja-dialogo:before 
-{
-content: "";
-position: absolute;
-bottom: -17.5px;
-left: calc(80% - 3px);
-border-style: solid;
-border-width: 18px 18px 0;
-border-color: #000000 transparent;
-display: block;
-width: 0;
-z-index: 0;
-}
-
-/* QUOTE BUBBLE FIN */
 
 
 /* EFECTO PARALLAX INICIO */
