@@ -47,20 +47,11 @@ p {
 }
 
 /* BURBUJA DIALOGO INICIO */
-/*
-.quote-bubble {
-	border-style: double;
-	border-width: 5px;
-	border-radius: 25px;
-}
-
-*/
 .burbuja-dialogo {
 	position: relative;
 	width: 600px;
 	height: auto;
 	padding: 20px;
-	/*background: #FFFFFF;*/
 	border: #000000 solid 2px;
 	-webkit-border-radius: 25px;
 	-moz-border-radius: 25px;
@@ -93,7 +84,7 @@ p {
 	z-index: 0;
 }
 
-/* QUOTE BUBBLE FIN */
+/* BURBUJA DIALOGO FIN */
 
 
 
@@ -118,10 +109,10 @@ p {
 }
 
 .tarjetas-est img {
-	width:100%;
-	max-width:100px;
-	float:left;
-	margin:10px;
+	width: 100%;
+	max-width: 100px;
+	float: left;
+	margin: 10px;
 }
 
 .tarjetas-est hr {
@@ -261,5 +252,3 @@ p {
     }
 	
 /* EFECTO PARALLAX FIN */
-
-
