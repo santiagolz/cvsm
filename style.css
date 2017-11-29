@@ -41,7 +41,7 @@ p {
 
 
 .bg-1 { 
-	background-color: #1abc9c; /* Verde */
+	background-color: #1abc9c; 
 	color: #ffffff;
 	margin-top: 50px
 }
@@ -88,7 +88,7 @@ p {
 
 
 
-
+/* Seccion estudios */
 .bg-2 { 
 	background-color: #2b506e; /* #474e5d;  gris oscuro, esta bueno */
 	color: #ffffff;
@@ -101,11 +101,17 @@ p {
 }
 
 .tarjetas-est { 
-	background-color: LightYellow; /* Blanco */
+	background-color: LightYellow; 
 	color: #000000;
 	border-left: 30px solid Tomato;
 	padding: 15px 10px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+				0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tarjetas-est:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+				0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .tarjetas-est img {
@@ -127,28 +133,53 @@ p {
 
 
 
+
 .bg-3 { 
-	background-color: Coral; /* Blanco */
+	background-color: Coral; 
 	color: #ffffff;
 	position:relative;
 }
 
 .bg-tablas-3 { 
-	background-color: Coral; /* Blanco */
+	background-color: Coral;
 	color: #000000;
 }
 
 .tarjetas-exp { 
-	background-color: #ebebe0; /* Blanco */
+	background-color: #ebebe0; 
 	color: #000000;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 15px 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+	            0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.tarjetas-exp:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+				0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.tarjetas-exp img {
+	width: 100%;
+	max-width: 100px;
+	float: left;
+	margin: 10px;
+}
+
+.tarjetas-exp hr {
+	border: 1px solid Tomato;
+}
+
+.tarjetas-exp h4 {
+	text-align: center;
+	font-weight: bold;
+}
+
 
 
 
 
 .bg-4 { 
-	background-color: #2f2f2f; /* Gris oscuro */
+	background-color: #2f2f2f; 
 	color: #ffffff;
 }
 
@@ -200,7 +231,7 @@ p {
 /* EFECTO PARALLAX INICIO */
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
 	position: relative;
-	opacity: 0.65;
+	opacity: 0.65; 
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
