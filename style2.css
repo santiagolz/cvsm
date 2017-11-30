@@ -1,0 +1,127 @@
+body {
+	font: 20px Courier new;
+	line-height: 1.8;
+	color: #f5f6f7;
+}
+
+p {
+	font-size: 16px;
+}
+
+.container-fluid {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+}
+
+.margin {
+	margin-bottom: 45px;
+}
+
+
+
+
+.bg-1 { 
+	background-color: #1abc9c; 
+	color: #ffffff;
+	margin-top: 50px
+}
+
+/* BURBUJA DIALOGO INICIO */
+.burbuja-dialogo {
+	position: relative;
+	width: 600px;
+	height: auto;
+	padding: 20px;
+	border: #000000 solid 2px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+
+.burbuja-dialogo:after {
+	content: "";
+	position: absolute;
+	bottom: -15px;
+	left: 80%;
+	border-style: solid;
+	border-width: 15px 15px 0;
+	border-color: #1abc9c transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+}
+
+.burbuja-dialogo:before {
+	content: "";
+	position: absolute;
+	bottom: -17.5px;
+	left: calc(80% - 3px);
+	border-style: solid;
+	border-width: 18px 18px 0;
+	border-color: #000000 transparent;
+	display: block;
+	width: 0;
+	z-index: 0;
+}
+
+/* BURBUJA DIALOGO FIN */
+
+
+
+/* Seccion estudios */
+.bg-2 { 
+	background-color: #2b506e; /* #474e5d;  gris oscuro, esta bueno */
+	color: #ffffff;
+	position:relative;
+}
+
+.bg-tablas-2 { 
+	background-color: #2b506e; /* #474e5d;  gris oscuro, esta bueno */
+	color: #000000;
+}
+
+.hoja-izq { 
+    -moz-border-radius: 0 50% / 0 100%;
+    -webkit-border-radius: 0 50% / 0 100%;
+    border-radius: 0 50% / 0 100%;
+    background: #5cb85c;
+    border: 3px solid #555;
+}
+
+.hoja-der { 
+    -moz-border-radius: 50% 0 / 100% 0;
+    -webkit-border-radius: 50% 0 / 100% 0;
+    border-radius: 50% 0 / 100% 0;
+    background: #5cb85c;
+    border: 3px solid #555;
+}
+
+.tarjetas-est:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+				0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.tarjetas-est img {
+	width: 100%;
+	max-width: 100px;
+	float: left;
+	margin: 10px;
+}
+
+.tarjetas-est hr {
+	border: 1px solid Tomato;
+}
+
+.tarjetas-est h4 {
+	text-align: center;
+	font-weight: bold;
+}
+
+
+
+

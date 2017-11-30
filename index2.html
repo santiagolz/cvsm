@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prueba Bootstrap</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">-->
+	<link rel="stylesheet" href="style2.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>-->
+	
+	<script>
+		$(document).ready(function(){
+			// Agrego "smooth scrolling" a todos los links en la navbar y el que está en el footer
+			$(".navbar a, footer a[href='#datos_personales']").on('click', function(event) {
+
+				// this.hash obtiene lo que sigue del # en los href de los links a los que le estoy modificando el comportamiento.
+				// Me aseguro que this.hash tenga algo antes de sobreescribir su comportamiento.
+				if (this.hash !== "") {
+
+					// Prevengo el comportamiento por defecto del link
+					event.preventDefault();
+
+					// Guardo el hash
+					var hash = this.hash;
+
+					// Uso la funcion animate() de jQuery para agregar el "smooth scrolling"
+					// El parámetro 900 especifica los milisegundos que le va a llevar scrollear hasta el área especificada.
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 900, function(){
+
+					window.location.hash = hash;
+					});
+				} // End if
+			});
+		})
+	</script>
+
+</head>
+<body>
+
+<!-- SECCIÓN DATOS PERSONALES INICIO -->	
+
+	<div class="container-fluid " id="datos_personales">
+		<h1>Datos Personales</h1>
+		<div class="burbuja-dialogo">
+			<p>Nombre: Santiago Muñoz Masalles.</p>
+			<p>Nacimiento: Montevideo-Uruguay, 11 de Octubre de 1989.</p>
+			<p>D.N.I.: 95.772.498</p>
+			<p>Dirección: Oro Verde, Los Laureles 304 depto 16.</p>
+			<p>Celular: 343 5 303 574</p>
+			<p>E-mail: santiago.lz@hotmail.com</p>
+		</div>
+	</div>
+
+<!-- SECCIÓN DATOS PERSONALES FIN -->
+
+
+	
+<!-- SECCIÓN ESTUDIOS INICIO -->	
+
+	<div class="container-fluid " id="estudios">
+		<h1>Estudios y capacitaciones</h1>
+		
+		<div class="row bg-tablas-2">
+		
+			<div class="col-sm-4">
+				<div class="hoja-izq">
+					<h4>Analista programador</h4>
+					<hr>
+					<img src="img/Logo_ORT_Uruguay.gif">
+					<p>Institución: Universidad ORT Uruguay</p>
+					<p>Año: 2008 - 2012</p>
+				</div>
+			</div>
+			<div class="col-sm-6"></div>
+			
+		</div>
+		
+		</br></br>
+		
+		<div class="row bg-tablas-2">
+		
+			<div class="col-sm-6"></div>
+			<div class="col-sm-4">
+				<div class="hoja-der">
+					<h4>Certified Scrum Master</h4>
+					<hr>
+					<img src="img/CSM_Logo_626_561_Clear.png">
+					<p>Lugar: Montevideo.</p>
+					<p>Instructor: Martín Alaimo, Kleer-ScrumAlliance</p>
+					<p>Año: 2015</p>
+				</div>
+			</div>
+			
+		</div>
+		
+		</br></br>
+		
+		<div class="row bg-tablas-2">
+			
+			<div class="col-sm-4">
+				<div class="hoja-izq">
+					<h4>Fundamentos de la Agilidad con Scrum + Estimación y Planificación Ágil</h4>
+					<hr>
+					<p>Lugar: Accusys, Paraná</p>
+					<p>Instructor: Sebastian Ismael, Grupo Esfera</p>
+					<p>Fechas: 24/08/2017 y 25/08/2017</p>
+				</div>
+			</div>
+			<div class="col-sm-6"></div>
+			
+		</div>
+		
+		</br></br>
+		
+		<div class="row bg-tablas-2">
+		
+			<div class="col-sm-6"></div>
+			<div class="col-sm-4">
+				<div class="hoja-der">
+					<h4>Desarrollo de aplicaciones Android básico</h4>
+					<hr>
+					<p>Lugar: Antel, Montevideo.</p>
+					<p>Año:  2014 </p>
+				</div>
+			</div>
+			
+		</div>
+		
+		</br></br>
+		
+		<div class="row bg-tablas-2">
+			
+			<div class="col-sm-4">
+				<div class="hoja-izq">
+					<h4>Desarrollo con Liferay</h4>
+					<hr>
+					<p>Lugar: Antel, Montevideo.</p>
+					<p>Año: 2014</p>
+				</div>
+			</div>
+			<div class="col-sm-6"></div>
+			
+		</div>
+		
+		</br></br>
+	</div>
+	
+<!-- SECCIÓN ESTUDIOS FIN -->
+
+
+	
+<!-- SECCIÓN EXPERIENCIA INICIO -->
+
+	<div class="container-fluid text-center" id="experiencia">
+		<h1>Experiencia Laboral</h1>
+		<br>
+		<div class="row bg-tablas-3">
+			<div class="col-sm-6">
+				<div class="hoja-izq">
+					<h4>MGI Acussys Technologies (Paraná-Argentina)</h4>
+					<hr>
+					<p>Puesto: Programador</p>
+					<p>Fecha: 24/07/2017 - Hoy</p>
+					<p>Responsabilidades: Análisis, diseño y desarrollo de aplicaciones. Realizar pruebas técnicas y funcionales. Dar mantenimiento a los sistemas. Documentar técnicamente.</p>
+					<p>Herramientas: VB 6.0, Sybase, SQR.</p>
+				</div>
+			</div>
+			
+			<div class="col-sm-6"></div>			
+			
+		</div>
+		
+		</br></br>
+		
+		<div class="row bg-tablas-2">
+		
+			<div class="col-sm-6"></div>
+			<div class="col-sm-6">
+				<div class="hoja-der">
+					<h4>HG S.A. (Montevideo)</h4>
+					<hr>
+					<p>Puesto: Programador</p>
+					<p>Fecha: 31/03/2014 – 28/04/2017</p>
+					<p>Responsabilidades: Mantenimiento e implementación de nuevas funcionalidades para sistema de pagos online.</p>
+					<p>Herramientas: VB.NET, C#, asp clásico, SQL Server, metodologías ágiles.</p>
+				</div>
+			</div>
+		</div>
+		
+		</br></br>
+		
+		<div class="row bg-tablas-3">
+			<div class="col-sm-4">
+				<div class="hoja-izq">
+					<h4>José María Duran S.A. (Montevideo)</h4>
+					<hr>
+					<p>Puesto: Soporte de sistemas.</p>
+					<p>Fecha: 24/08/2013 – 28/03/2014</p>
+					<p>Responsabilidades: Desarrollo de aplicaciones para facilitar y optimizar el día a día del personal de la empresa y soporte técnico.</p>
+					<p>Herramientas: VB.NET, SQL Server, Crystal Reports.</p>
+				</div>
+			</div>
+			
+			<div class="col-sm-6"></div>
+			
+		</div>
+		
+		</br></br>
+		
+		<div class="row bg-tablas-2">
+		
+			<div class="col-sm-6"></div>
+			<div class="col-sm-4">
+				<div class="hoja-der">
+					<h4>Actualred SRL (Paysandú)</h4>
+					<hr>
+					<p>Puesto: Programador</p>
+					<p>Fecha: 02/04/2012 – 01/07/2013</p>
+					<p>Responsabilidades: Tareas de programación y análisis de requerimientos. Soporte a clientes por teléfono y TeamViewer.</p>
+					<p>Herramientas: VB.NET, JavaScript, SQL Server, VB 6.0, Crystal Reports, Ext.NET.</p>
+				</div>
+			</div>
+		</div>
+		
+		</br></br>
+		
+		<div class="row bg-tablas-3">
+		
+			<div class="col-sm-4">
+				<div class="hoja-izq">
+					<h4>Actualred SRL (Paysandú)</h4>
+					<hr>
+					<p>Puesto: Pasante</p>
+					<p>Fecha: 01/12/2011 – 29/02/2012</p>
+					<p>Responsabilidades: Desarrollo de una solución web para gestión de mantenimiento industrial y emisión de certificados para balanzas, utilizando ASP.Net 2.0 y Visual Basic, entregado como requisito para la obtención del título de Analista Programador.</p>
+					<p>Herramientas: VB.NET, SQL Server</p>
+				</div>
+			</div>
+			<div class="col-sm-6"></div>
+			
+		</div>
+			
+	</div>
+	
+
+<!-- SECCIÓN EXPERIENCIA FIN -->
+
+
+	
+<!-- SECCIÓN IDIOMAS INICIO -->
+
+	<div class="container-fluid " id="idiomas">
+		<h1>Idiomas</h1>
+		<p>Nivel de ingles:</p>
+		<br>
+		
+		<div class="row">
+			<div class="col-sm-1">
+				<p>Habla:</p>
+			</div>	
+			<div class="col-sm-6">
+				<div class="progress">
+					<div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="42"
+						aria-valuemin="0" aria-valuemax="100" style="width:42%">
+						42%
+					</div>
+				</div>
+			</div>	
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-1">	
+				<p>Escucha:</p>
+			</div>	
+			<div class="col-sm-6">
+				<div class="progress">
+					<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="63"
+						aria-valuemin="0" aria-valuemax="100" style="width:63%">
+						63%
+					</div>
+				</div>
+			</div>	
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-1">	
+				<p>Escrito:</p>
+			</div>	
+			<div class="col-sm-6">
+				<div class="progress">
+					<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="66"
+						aria-valuemin="0" aria-valuemax="100" style="width:66%">
+						66%
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-1">	
+				<p>Leído:</p>
+			</div>	
+			<div class="col-sm-6">
+				<div class="progress">
+					<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="79"
+						aria-valuemin="0" aria-valuemax="100" style="width:79%">
+						79%
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+<!-- SECCIÓN IDIOMAS FIN -->
+
+
+</body>
+</html>
+
